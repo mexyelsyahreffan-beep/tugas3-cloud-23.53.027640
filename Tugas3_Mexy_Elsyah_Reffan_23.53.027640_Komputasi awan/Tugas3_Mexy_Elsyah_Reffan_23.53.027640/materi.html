@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Materi Komputasi Awan | Tugas 3</title>
+  <meta name="description" content="Pengertian komputasi awan, perbedaan SaaS, PaaS, IaaS, serta manfaat dan risiko layanan cloud.">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-umpr.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Beranda">
+        <span class="brand-logo">
+          <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1 .5 9H7z"/></svg>
+        </span>
+        Mexy Reffan
+      </a>
+
+      <input type="checkbox" id="nav-toggle" aria-label="Buka menu">
+      <label class="nav-burger" for="nav-toggle" aria-hidden="true"><span></span></label>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a class="active" href="materi.html">Materi</a></li>
+        <li><a href="portofolio.html">Portofolio</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="crumb"><a href="index.html">Beranda</a> / Materi Komputasi Awan</p>
+        <h1>Materi Komputasi Awan</h1>
+        <p>Ringkasan konsep dasar cloud computing: apa itu, jenis layanannya, serta untung dan ruginya.</p>
+        <nav class="toc" aria-label="Daftar isi">
+          <a href="#pengertian">Pengertian</a>
+          <a href="#layanan">SaaS, PaaS, IaaS</a>
+          <a href="#tanggung-jawab">Pembagian Tanggung Jawab</a>
+          <a href="#manfaat-risiko">Manfaat &amp; Risiko</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ============ PENGERTIAN ============ -->
+    <section class="section" id="pengertian">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">01 &middot; Pengertian</span>
+          <h2>Apa itu komputasi awan?</h2>
+        </div>
+        <div class="grid grid-2">
+          <div>
+            <p>
+              Komputasi awan (<em>cloud computing</em>) adalah model penyediaan sumber daya komputasi
+              seperti server, penyimpanan, basis data, jaringan, dan perangkat lunak melalui internet.
+              Pengguna tidak perlu membeli dan merawat perangkat keras sendiri, cukup memakai layanan
+              yang disediakan oleh penyedia cloud sesuai kebutuhan.
+            </p>
+            <p>
+              Biaya umumnya dihitung berdasarkan pemakaian (<em>pay as you go</em>), dan kapasitas bisa
+              ditambah atau dikurangi dengan cepat tanpa harus menunggu pengadaan perangkat baru.
+            </p>
+          </div>
+          <div class="callout">
+            <p><strong>Karakteristik utama:</strong></p>
+            <ul>
+              <li><em>On-demand self-service</em>: sumber daya dapat dipesan sendiri kapan saja.</li>
+              <li><em>Broad network access</em>: dapat diakses lewat internet dari berbagai perangkat.</li>
+              <li><em>Resource pooling</em>: sumber daya dipakai bersama oleh banyak pengguna.</li>
+              <li><em>Rapid elasticity</em>: kapasitas dapat naik turun mengikuti kebutuhan.</li>
+              <li><em>Measured service</em>: pemakaian diukur dan ditagih sesuai penggunaan.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SaaS PaaS IaaS ============ -->
+    <section class="section alt" id="layanan">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">02 &middot; Model Layanan</span>
+          <h2>SaaS, PaaS, dan IaaS</h2>
+          <p>Tiga model layanan utama yang dibedakan dari seberapa banyak yang dikelola penyedia dan seberapa banyak yang dikelola pengguna.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card service">
+            <h3>SaaS</h3>
+            <p><strong>Software as a Service</strong></p>
+            <p>
+              Aplikasi siap pakai yang dijalankan di cloud dan diakses lewat peramban atau aplikasi.
+              Pengguna hanya memakai, tanpa mengurus server maupun pembaruan.
+            </p>
+            <p><span class="tag">Google Drive</span><span class="tag">Gmail</span><span class="tag">Microsoft 365</span></p>
+          </article>
+
+          <article class="card service paas">
+            <h3>PaaS</h3>
+            <p><strong>Platform as a Service</strong></p>
+            <p>
+              Platform untuk membangun, menjalankan, dan mengelola aplikasi tanpa memikirkan
+              infrastruktur di bawahnya. Pengembang fokus pada kode dan data.
+            </p>
+            <p><span class="tag">GitHub Pages</span><span class="tag">Google App Engine</span><span class="tag">Heroku</span></p>
+          </article>
+
+          <article class="card service iaas">
+            <h3>IaaS</h3>
+            <p><strong>Infrastructure as a Service</strong></p>
+            <p>
+              Infrastruktur dasar berupa mesin virtual, penyimpanan, dan jaringan yang disewa.
+              Pengguna mengatur sendiri sistem operasi, runtime, dan aplikasinya.
+            </p>
+            <p><span class="tag">Amazon EC2</span><span class="tag">Google Compute Engine</span><span class="tag">Azure VM</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TABEL TANGGUNG JAWAB ============ -->
+    <section class="section" id="tanggung-jawab">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">03 &middot; Perbandingan</span>
+          <h2>Siapa mengelola apa?</h2>
+          <p>Semakin ke kanan, semakin banyak pekerjaan yang diambil alih oleh penyedia layanan.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Lapisan</th><th>On-premise</th><th>IaaS</th><th>PaaS</th><th>SaaS</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Aplikasi</td><td class="you">Anda</td><td class="you">Anda</td><td class="you">Anda</td><td class="prov">Penyedia</td></tr>
+              <tr><td>Data</td><td class="you">Anda</td><td class="you">Anda</td><td class="you">Anda</td><td class="prov">Penyedia</td></tr>
+              <tr><td>Runtime</td><td class="you">Anda</td><td class="you">Anda</td><td class="prov">Penyedia</td><td class="prov">Penyedia</td></tr>
+              <tr><td>Sistem operasi</td><td class="you">Anda</td><td class="you">Anda</td><td class="prov">Penyedia</td><td class="prov">Penyedia</td></tr>
+              <tr><td>Virtualisasi</td><td class="you">Anda</td><td class="prov">Penyedia</td><td class="prov">Penyedia</td><td class="prov">Penyedia</td></tr>
+              <tr><td>Server &amp; penyimpanan</td><td class="you">Anda</td><td class="prov">Penyedia</td><td class="prov">Penyedia</td><td class="prov">Penyedia</td></tr>
+              <tr><td>Jaringan</td><td class="you">Anda</td><td class="prov">Penyedia</td><td class="prov">Penyedia</td><td class="prov">Penyedia</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="legend">
+          <span class="l-you">Dikelola pengguna</span>
+          <span class="l-prov">Dikelola penyedia cloud</span>
+        </div>
+
+        <div class="callout">
+          <p>
+            <strong>Contoh nyata:</strong> website ini dipublikasikan dengan <strong>GitHub Pages</strong>.
+            Saya hanya menyiapkan berkas HTML dan CSS, sedangkan server, jaringan, dan pengaturan
+            hostingnya dikelola oleh GitHub.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MANFAAT & RISIKO ============ -->
+    <section class="section alt" id="manfaat-risiko">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">04 &middot; Evaluasi</span>
+          <h2>Manfaat dan risiko layanan cloud</h2>
+          <p>Cloud sangat membantu, tetapi tetap perlu digunakan dengan hati-hati.</p>
+        </div>
+
+        <div class="grid grid-2">
+          <div class="pros">
+            <h3>&#9989; Manfaat</h3>
+            <ul>
+              <li><strong>Hemat biaya awal.</strong> Tidak perlu membeli server sendiri; cukup bayar sesuai pemakaian.</li>
+              <li><strong>Skalabel.</strong> Kapasitas mudah ditambah saat pengunjung ramai dan dikurangi saat sepi.</li>
+              <li><strong>Mudah diakses.</strong> Dapat dibuka dari mana saja selama ada koneksi internet.</li>
+              <li><strong>Ketersediaan tinggi.</strong> Infrastruktur penyedia dirancang agar layanan tetap menyala.</li>
+              <li><strong>Pembaruan otomatis.</strong> Perawatan dan pembaruan sistem ditangani penyedia.</li>
+              <li><strong>Kolaborasi lebih mudah.</strong> Banyak orang dapat mengakses berkas dan aplikasi yang sama.</li>
+            </ul>
+          </div>
+
+          <div class="cons">
+            <h3>&#9888;&#65039; Risiko</h3>
+            <ul>
+              <li><strong>Privasi dan keamanan data.</strong> Data disimpan di pihak ketiga sehingga rawan bocor bila salah konfigurasi.</li>
+              <li><strong>Ketergantungan internet.</strong> Layanan tidak dapat diakses saat koneksi bermasalah.</li>
+              <li><strong>Vendor lock-in.</strong> Berpindah penyedia bisa sulit dan mahal.</li>
+              <li><strong>Gangguan layanan.</strong> Jika penyedia mengalami gangguan, banyak pengguna ikut terdampak.</li>
+              <li><strong>Biaya tak terduga.</strong> Pemakaian yang berlebihan dapat membuat tagihan membengkak.</li>
+              <li><strong>Kepatuhan hukum.</strong> Lokasi penyimpanan data dapat terkait aturan perlindungan data.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <span>&copy; 2026 Mexy Elsyah Reffan &middot; Tugas 3 Komputasi Awan</span>
+      <span>
+        <a href="index.html">Beranda</a> &middot;
+        <a href="materi.html">Materi</a> &middot;
+        <a href="portofolio.html">Portofolio</a>
+      </span>
+      <span class="ver">Versi 1.0</span>
+    </div>
+  </footer>
+
+</body>
+</html>

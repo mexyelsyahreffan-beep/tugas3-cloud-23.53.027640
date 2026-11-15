@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beranda | Tugas 3 Komputasi Awan</title>
+  <meta name="description" content="Website statis Tugas 3 Komputasi Awan yang dipublikasikan melalui GitHub Pages.">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo-umpr.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Beranda">
+        <span class="brand-logo">
+          <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1 .5 9H7z"/></svg>
+        </span>
+        Mexy Reffan
+      </a>
+
+      <input type="checkbox" id="nav-toggle" aria-label="Buka menu">
+      <label class="nav-burger" for="nav-toggle" aria-hidden="true"><span></span></label>
+
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Beranda</a></li>
+        <li><a href="materi.html">Materi</a></li>
+        <li><a href="portofolio.html">Portofolio</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO / LANDING ============ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge"><i></i> Online di GitHub Pages</span>
+          <h1>Halo, saya <span class="grad">Mexy Elsyah Reffan</span></h1>
+          <p class="nim">NIM: 23.53.027640</p>
+          <p class="lead">
+            Mahasiswa yang sedang belajar Komputasi Awan. Website ini adalah hasil Tugas 3:
+            sebuah situs statis yang dipublikasikan ke cloud hosting sehingga bisa dibuka
+            siapa saja lewat URL publik, kapan saja dan dari mana saja.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="materi.html">Pelajari Materi &rarr;</a>
+            <a class="btn btn-ghost" href="portofolio.html">Lihat Portofolio</a>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="photo-ring">
+            <img src="assets/images/Foto-Formal-Mexy.png" alt="Foto profil mahasiswa" width="340" height="340">
+          </div>
+          <span class="chip c1">&#9729;&#65039; Cloud Computing<small>Mata kuliah</small></span>
+          <span class="chip c2">&#128640; Deployed<small>GitHub Pages</small></span>
+        </div>
+      </div>
+
+      <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 60V30C240 0 480 0 720 25s480 30 720 5v30z" fill="#f8fafc"/></svg>
+      </div>
+    </section>
+
+    <!-- ============ TENTANG SAYA ============ -->
+    <section class="section" id="tentang">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Tentang Saya</span>
+          <h2>Perkenalan singkat</h2>
+          <p>
+            Saya membuat website ini dari awal menggunakan HTML dan CSS, lalu mempublikasikannya
+            ke GitHub Pages untuk memahami bagaimana proses deployment pada layanan cloud berjalan.
+          </p>
+        </div>
+        <dl class="about">
+          <div><dt>Nama</dt><dd>Mexy Elsyah Reffan</dd></div>
+          <div><dt>NIM</dt><dd>23.53.027640</dd></div>
+          <div><dt>Program Studi</dt><dd>Ilmu Komputer</dd></div>
+          <div><dt>Mata Kuliah</dt><dd>Komputasi Awan</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ ISI WEBSITE ============ -->
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Jelajahi</span>
+          <h2>Apa saja yang ada di website ini?</h2>
+          <p>Tiga halaman utama yang saling terhubung melalui menu navigasi di bagian atas.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="icon">&#127968;</div>
+            <h3>Beranda</h3>
+            <p>Halaman perkenalan berisi identitas, foto, dan deskripsi singkat tentang pemilik website.</p>
+          </article>
+          <article class="card">
+            <div class="icon">&#9729;&#65039;</div>
+            <h3>Materi Komputasi Awan</h3>
+            <p>Pengertian komputasi awan, perbedaan SaaS, PaaS, dan IaaS, serta manfaat dan risikonya.</p>
+            <a class="more" href="materi.html">Buka materi &rarr;</a>
+          </article>
+          <article class="card">
+            <div class="icon">&#128193;</div>
+            <h3>Portofolio Tugas</h3>
+            <p>Ringkasan dan tautan hasil Tugas 1, Tugas 2, dan Tugas 3 pada mata kuliah ini.</p>
+            <a class="more" href="portofolio.html">Lihat portofolio &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ALUR DEPLOYMENT ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Proses</span>
+          <h2>Bagaimana website ini bisa online?</h2>
+          <p>Alur sederhana dari berkas di laptop hingga bisa dibuka lewat internet.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>Tulis kode</h3>
+            <p>Website dibuat dengan HTML dan CSS, lalu diuji di peramban secara lokal.</p>
+          </div>
+          <div class="step">
+            <h3>Unggah ke GitHub</h3>
+            <p>Seluruh berkas diunggah ke repositori publik dan disimpan lewat commit.</p>
+          </div>
+          <div class="step">
+            <h3>Aktifkan Pages</h3>
+            <p>GitHub Pages dipilih dari branch utama sebagai sumber deployment.</p>
+          </div>
+          <div class="step">
+            <h3>Dapat URL publik</h3>
+            <p>Website tersedia di internet dan dapat diperbarui dengan commit baru.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container foot">
+      <span>&copy; 2026 Mexy Elsyah Reffan &middot; Tugas 3 Komputasi Awan</span>
+      <span>
+        <a href="index.html">Beranda</a> &middot;
+        <a href="materi.html">Materi</a> &middot;
+        <a href="portofolio.html">Portofolio</a>
+      </span>
+      <span class="ver">Versi 1.0</span>
+    </div>
+  </footer>
+
+</body>
+</html>
